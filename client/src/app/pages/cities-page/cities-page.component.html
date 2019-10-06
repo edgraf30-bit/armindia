@@ -1,0 +1,31 @@
+<nz-table  nzSize="middle" [nzData]="dataOfItem">
+  <thead>
+  <tr>
+    <th nzWidth="15%">Title</th>
+    <th nzWidth="20%">Description</th>
+    <th>Text</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of dataOfItem">
+    <td>{{ data.title }}</td>
+    <td>{{ data.description }}</td>
+    <td>{{ data.text }}</td>
+    <td>
+      <div class="editable-row-operations">
+        <ng-container>
+          <a (click)="startDelete(data)">Delete</a>
+        </ng-container>
+      </div>
+      <div class="editable-row-operations">
+        <ng-container>
+          <a routerLink="/cities-update"
+             [queryParams]="{title: data.title, description: data.description, text: data.text, id: data.id}">Edit</a>
+        </ng-container>
+      </div>
+    </td>
+  </tr>
+  <button nz-button routerLink="/cities-update" nzType="primary">Add</button>
+  </tbody>
+</nz-table>

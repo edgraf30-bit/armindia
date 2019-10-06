@@ -1,0 +1,21 @@
+<h4>Title</h4>
+<textarea
+  nz-input id="updateId"
+  value="{{title}}" [(ngModel)]="title"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+</textarea><br><br><br>
+<h4>Description</h4>
+<textarea
+  nz-input
+  value="{{description}}" [(ngModel)]="description"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+</textarea><br><br><br>
+<h4>Text</h4>
+<textarea
+  nz-input
+  value="{{text}}" [(ngModel)]="text"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+</textarea><br><br>
+<button nz-button nzType="primary" (click)="startEdit()">UPDATE</button><br><br>
+<button nz-button nzType="primary" (click)="addRow()">ADD</button>
+

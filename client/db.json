@@ -1,0 +1,69 @@
+{
+  "listOfData": [
+    {
+      "title": "Learn with us",
+      "description": "Lorem ipsum",
+      "text": "Lorem Ipsum55555555is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "id": "0"
+    },
+    {
+      "title": "Yerevan",
+      "description": "Capital of Armenia",
+      "image": "https://source.unsplash.com/random/150x120",
+      "text": "Barev yerevan",
+      "id": "1"
+    },
+    {
+      "title": "barev ",
+      "description": "yerevan",
+      "text": "hajog",
+      "id": "aELFP0E"
+    },
+    {
+      "title": "rrrrrr",
+      "description": "rrrrrrrrrrrrrr",
+      "text": "rrrrrrrrrrrrr",
+      "id": "y4q_Ftz"
+    },
+    {
+      "title": "11111111111",
+      "description": "111111111111111111111111",
+      "text": "11111111111111111111111",
+      "id": "JNQa6N8"
+    }
+  ],
+  "listOfTrainings": [
+    {
+      "date": "20.09.2019",
+      "training": "Web design",
+      "level": "1",
+      "id": "1"
+    },
+    {
+      "date": "20.09.2019",
+      "training": "Web design",
+      "level": "1",
+      "id": "2"
+    }
+  ],
+  "ourTeam": [
+    {
+      "name": "Pogos Pogosyan",
+      "prof": "Director",
+      "image": "https://huntfish.mdc.mo.gov/sites/default/files/styles/centered_full/public/images/species/raccoon.jpg?itok=CHag5F-n",
+      "id": "1"
+    },
+    {
+      "name": "Martiros Martirosyan",
+      "prof": "President",
+      "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Petros Petrosyan",
+      "prof": "Programer",
+      "image": "https://i.etsystatic.com/5198243/r/il/872316/283986384/il_794xN.283986384.jpg",
+      "id": "3"
+    }
+  ]
+}

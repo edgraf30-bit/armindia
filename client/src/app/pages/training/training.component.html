@@ -1,0 +1,30 @@
+<nz-table  nzSize="middle" [nzData]="listOfTrainings">
+  <thead>
+  <tr>
+    <th nzWidth="15%">Date</th>
+    <th nzWidth="20%">Training</th>
+    <th nzWidth="20%">Level</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of listOfTrainings">
+    <td>{{ data.date }}</td>
+    <td>{{ data.training }}</td>
+    <td>{{ data.level }}</td>
+    <td>
+      <div class="editable-row-operations">
+        <ng-container>
+          <a (click)="startDelete(data)">Delete</a>
+        </ng-container>
+      </div>
+      <div class="editable-row-operations">
+        <ng-container>
+          <a routerLink="/cities-update"
+             [queryParams]="{title: data.date, description: data.training, text: data.level, id: data.id}">Edit</a>
+        </ng-container>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>

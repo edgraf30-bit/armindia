@@ -1,0 +1,22 @@
+<h4>Name</h4>
+<textarea
+  nz-input id="updateId"
+  value="{{name}}" [(ngModel)]="name"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+</textarea><br><br><br>
+<h4>Prof</h4>
+<textarea
+  nz-input
+  value="{{prof}}" [(ngModel)]="prof"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+</textarea><br><br><br>
+<h4>Image</h4>
+<textarea
+  nz-input
+  value="{{image}}" [(ngModel)]="image"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }">
+  <img src="{{image}}" alt="">
+</textarea><br><br>
+<button nz-button nzType="primary" (click)="startEdit()">UPDATE</button>
+
+

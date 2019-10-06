@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <ul  style="width:240px"  class="navbar" nz-menu nzMode="inline" nzTheme="dark" [nzInlineCollapsed]="isCollapsed">
+    <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzSelected>
+      <i nz-icon nzType="mail"></i>
+      <span>MENU</span>
+    </li>
+    <li nz-submenu nzTitle="Navigation" nzIcon="appstore">
+      <ul>
+        <li nz-menu-item routerLink="/overview">Main</li>
+        <li nz-menu-item routerLink="/cities">Home</li>
+        <li nz-menu-item routerLink="/training">Training</li>
+        <li nz-menu-item routerLink="/ourteam">Our Team</li>
+        <li nz-menu-item>CoWorking</li>
+        <li nz-menu-item>About Us</li>
+        <li nz-menu-item>Contact Us</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="router">
+  <router-outlet></router-outlet>
+</div>
+
